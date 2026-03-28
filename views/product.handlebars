@@ -1,0 +1,16 @@
+<header>
+    <a href="/">← Voltar para a vitrine</a>
+</header>
+
+<section class="product-details">
+    <h1>Detalhes do Produto</h1>
+    
+    {{#if product}}
+        <h2>{{product.name}}</h2>
+        <p><strong>Preço:</strong> R$ {{product.price}}</p>
+        <p><strong>Quantidade em estoque:</strong> {{product.inStock}} unidades</p>
+    {{else}}
+        <h2>Ops! Produto não encontrado.</h2>
+        <a href="/">Voltar para a Home</a>
+    {{/if}}
+</section>
